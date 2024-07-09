@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AST Challenge should generate code correctly for a single method 1`] = `
+"export interface UsePoolsQuery {
+  request: QueryPoolsRequest;
+  options: ReactQueryParams;
+}
+
+const usePools = (request, options) => {
+  return useQuery([\\"poolsQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.pools(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 1`] = `
+"export interface UsePoolsQuery {
+  request: QueryPoolsRequest;
+  options: ReactQueryParams;
+}
+
+const usePools = (request, options) => {
+  return useQuery([\\"poolsQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.Pools(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 2`] = `
+"export interface UseNumPoolsQuery {
+  request: QueryNumPoolsRequest;
+  options: ReactQueryParams;
+}
+
+const useNumPools = (request, options) => {
+  return useQuery([\\"numpoolsQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.NumPools(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 3`] = `
+"export interface UseTotalLiquidityQuery {
+  request: QueryTotalLiquidityRequest;
+  options: ReactQueryParams;
+}
+
+const useTotalLiquidity = (request, options) => {
+  return useQuery([\\"totalliquidityQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.TotalLiquidity(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 4`] = `
+"export interface UsePoolQuery {
+  request: QueryPoolRequest;
+  options: ReactQueryParams;
+}
+
+const usePool = (request, options) => {
+  return useQuery([\\"poolQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.Pool(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 5`] = `
+"export interface UsePoolParamsQuery {
+  request: QueryPoolParamsRequest;
+  options: ReactQueryParams;
+}
+
+const usePoolParams = (request, options) => {
+  return useQuery([\\"poolparamsQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.PoolParams(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 6`] = `
+"export interface UseTotalPoolLiquidityQuery {
+  request: QueryTotalPoolLiquidityRequest;
+  options: ReactQueryParams;
+}
+
+const useTotalPoolLiquidity = (request, options) => {
+  return useQuery([\\"totalpoolliquidityQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.TotalPoolLiquidity(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 7`] = `
+"export interface UseTotalSharesQuery {
+  request: QueryTotalSharesRequest;
+  options: ReactQueryParams;
+}
+
+const useTotalShares = (request, options) => {
+  return useQuery([\\"totalsharesQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.TotalShares(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 8`] = `
+"export interface UseSpotPriceQuery {
+  request: QuerySpotPriceRequest;
+  options: ReactQueryParams;
+}
+
+const useSpotPrice = (request, options) => {
+  return useQuery([\\"spotpriceQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.SpotPrice(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 9`] = `
+"export interface UseEstimateSwapExactAmountInQuery {
+  request: QuerySwapExactAmountInRequest;
+  options: ReactQueryParams;
+}
+
+const useEstimateSwapExactAmountIn = (request, options) => {
+  return useQuery([\\"estimateswapexactamountinQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.EstimateSwapExactAmountIn(request);
+  }, options);
+};"
+`;
+
+exports[`AST Challenge should generate code for all example methods 10`] = `
+"export interface UseEstimateSwapExactAmountOutQuery {
+  request: QuerySwapExactAmountOutRequest;
+  options: ReactQueryParams;
+}
+
+const useEstimateSwapExactAmountOut = (request, options) => {
+  return useQuery([\\"estimateswapexactamountoutQuery\\", request], () => {
+    if (!queryService) throw new Error(\\"Query Service not initialized\\");
+    return queryService.EstimateSwapExactAmountOut(request);
+  }, options);
+};"
+`;
